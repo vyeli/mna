@@ -33,3 +33,6 @@ function [v, lambda, niter] = APOWER(A, v0, tol, max_iter)
     lambda = [];
   endif
 endfunction
+
+# Ejemplo
+#[v, l, niter] = APOWER(A, x0, tol=1e-10, n=1000)
