@@ -15,4 +15,8 @@ x0=[1;-0.5;1];
 
 
 #Ej8 calcular con QR
+a = FINDQRAVAL(A, tol=1e-10, max_iter=1000);
+
+
+#Ej9 
 
