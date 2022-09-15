@@ -18,5 +18,9 @@ x0=[1;-0.5;1];
 a = FINDQRAVAL(A, tol=1e-10, max_iter=1000);
 
 
-#Ej9 
+#Ej9
+A=[1 0 0; 0 0 -1; 0 1 0]
+lambdas = FINDQRAVAL(A, tol=1e-10, max_iter=1000)
+[P D] = eig(A)
+#Este ejercicio me muestra que findqraval me da solo reales, eig me da los autovalores complejo
 

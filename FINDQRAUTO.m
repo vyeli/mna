@@ -1,3 +1,8 @@
+#{
+Conocidos los autovalores de A, se puede estimar los autovectores de A
+con el metodo de las potencias inversa que esta
+#}
+
 function B = FINDQRAUTO (A, tol, max_iter)
     n=size(A,1);
     B=zeros(size(A));
