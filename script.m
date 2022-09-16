@@ -37,4 +37,26 @@ function [d] = prod(A)
     x = x * A(i,i)^2;
   endfor
   d = x;
-endfunction
+endfunction;
+
+
+# inv(A)*B = A\B
+
+#Punto B
+A = [1 1 1 1 1 ; 0 0 0 0 0; -1 -1 -1 -1 -1; 0 0 0 0 0; 1 1 1 1 1; -1 -1 -1 -1 -1; 0 0 0 0 0];
+[U S V] = svd(A);
+err = 1e-16;
+rank = 0;
+i = 1;
+while S(i,1) > err
+  rank += 1;
+  i++;
+end
+rank
+
+
+
+
+
+
+
