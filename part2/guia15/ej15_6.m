@@ -30,8 +30,8 @@ Id = eye(size(A)); % identidad
 % Implícito
 yi=ymin;
 ysimi=[yi];
-autovalores = abs(eig(Id - h*A)); #Para ver si converge
-autovalores
+#autovalores = abs(eig(Id - h*A)); #Para ver si converge
+#autovalores
 
 for i=0:NI  
    yip1=inv(Id - h*A)*yi; #Esta es la formula que nos quedo yn+1 = (Id-h*A)^-1*yn  
@@ -44,8 +44,8 @@ error = abs((yex_2pi-ysimi_last))
 % Explícito
 yi=ymin;
 ysimi=[yi];
-autovaloresExp = abs(eig(Id + h*A)); #Para ver si converge
-autovaloresExp
+#autovaloresExp = abs(eig(Id + h*A)); #Para ver si converge
+#autovaloresExp
 for i=0:NI
    yip1=(Id+A*h)*yi;
    ysimi=[ysimi yip1];
@@ -57,8 +57,8 @@ error = abs((yex_2pi-ysimi_last))
 % Crank-nicolson
 yi=ymin;
 ysimi=[yi];
-autovaloresCN = abs(eig(inv((Id - A*h/2))*(Id + A*h/2))); #Para ver si converge
-autovaloresCN
+#autovaloresCN = abs(eig(inv((Id - A*h/2))*(Id + A*h/2))); #Para ver si converge
+#autovaloresCN
 for i=0:NI
    yip1=inv((Id - A*h/2))*(Id + A*h/2)*yi;
    ysimi=[ysimi yip1];
