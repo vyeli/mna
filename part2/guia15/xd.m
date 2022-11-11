@@ -34,4 +34,7 @@ h=(xmax-xmin)/(NI+1)
 x=linspace(xmin,xmax,NI+2)';
 x;
 dp1=ones(NI-1,1);
-dp1
+dp1;
+
+
+ 
